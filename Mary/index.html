@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git & GitHub</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Git & GitHub</h1>
+        
+    </header>
+
+    <main></main>
+        <div>
+            <h2>Que es GitHub?</h2>
+            <p>GitHub es un sitio web y un servicio en la nube que ayuda a los desarrolladores a almacenar y administrar su código, llevar un registro y control de cualquier cambio sobre este código.</p>
+            <p>los sistemas de control de versiones: nos ayudan a nuestro flujo de desarrollo,
+            a mantener un historial de cambios; a tener control sobre cada cambio en el código; a que un cambio de una persona no influya en el cambio realizado por otra;</p>
+            <p>Permite el almacenamiento y acceso a un historial de cambios</p>
+        </div>
+
+        <div>
+            <h2>Configuraciones</h2>
+            <p>git config --local: nos indica que las configuracioones que vamos a crear van a ser solo para este proyecto</p>
+            git config --global: sirve para todos los proyectos que haremos desde ese momento en la computadora
+            <p>git config --global user.email "correo@gmail.com": permite configurar o agregar tu email</p>
+            <p>git config --global user.nombre "nombre": permite configurar tu nombre</p>
+        </div>
+
+        <div>
+            <h2>Algunos comandos de GitHub</h2>
+            <p>cd: nos permite navegar por nuestro directorio</p>
+            <p>ls: nos muestra los archivos y documentos de donde nos encontramos</p>
+            <p>git --version: nos muestra la version instalada</p>
+            <p>git init: inicializa un repositorio en el directorio donde se ejecuta el comando. Desde este comando, Git podrá administrar los cambios realizados en los archivos.</p>
+            <p>Cuando git init veremos que nos aparece la palabra master, esto significa que esta en la branch master</p>
+            <p>git status: nos muestra los cambios y el estado de los archivos</p>
+            <p>Al ejecutar el comando git status, recibimos información que puede no ser tan clara, especialmente cuando nos encontramos con términos como HEAD, working tree, index, etc.</p>
+            <ul>
+                <li>head: Estado actual de nuestro código, es decir, donde nos colocó Git</li>
+                <li>Working tree: Lugar donde los archivos realmente están siendo almacenados</li>
+                <li>index: Lugar donde Git almacena lo que será commiteado, es decir, la ubicación entre el working tree y el repositorio de Git en sí.</li>
+            </ul>
+            <p>git add: monitorea un archivo</p>
+            <p>git add . : monitorea todos los archivos de la carpeta donde nos encontramos</p>
+            <p>git rm --cached "nombre del archivo": deja de monitorear el archivo seleccionado</p> 
+            <p>git commit -m "descripcion": guardamos la version de codigo</p>
+            <p>un commit es la forma de guardar un estado o versión de nuestro código;</p>
+            <p><em>.gitignore:</em> permite ignorar un archivo de nuestro proyecto</p>
+            <p>git init --bare: Con este comando creamos un repositorio que no tendrá la working tree, o sea, no contendrá una copia de nuestros archivos. Como el repositorio servirá solo como servidor, para que otros miembros del equipo sincronicen sus trabajos, disminuimos espacio de almacenamiento de esta forma</p>
+            <p>git remote add nombre-repositorio camino/del/repositorio: De esta forma tendremos un link de nuestro repositorio local con el repositorio remoto, que llamamos de nombre-repositorio, que está almacenado en camino/del/repositorio.</p>
+        </div>
+
+        <div>
+            <h2>Git log</h2>
+            <p>git log: muestra el hitorico de modificaciones</p>
+            <p>git log --oneline: nos muestra un resumen de los cambios realizados</p>
+            <p>git log -p: nos muestras todas las modificaciones realiozadas</p>
+            <a href="https://devhints.io/git-log."><p>Para saber mas de git log hecha un vistazo aqui</p></a>
+        </div>
+        
+    <footer></footer>    
+</body>
+</html>
